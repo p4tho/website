@@ -5,7 +5,7 @@ const Navigation = () => {
     <nav className="flex justify-between items-center">
       <h1>p4tho</h1>
 
-      <ul className="flex flex-row gap-4">
+      <ul className="flex flex-row gap-1">
         <li>
           <a href="/" className="nav-item">
             /home
