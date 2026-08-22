@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.nav-item {
+    @apply transition-colors duration-100 hover:text-blue-600 hover:underline;
+}
