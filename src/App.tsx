@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Layout from "./Layout";
 import './App.css';
+import { blogs } from './constants';
 
 const App = () => {
   return (
@@ -11,6 +12,17 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
+
+          {/* Blogs */}
+          {blogs.map((blog) => {
+            return (
+              <Route
+                key={blog.href}
+                path={blog.href}
+                element=<blog.page />
+              />
+            );
+          })}
         </Routes>
       </Layout>
     </Router>
